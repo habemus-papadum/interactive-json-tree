@@ -1,0 +1,44 @@
+[project]
+name = "json-tree"
+version = "0.1.0"
+description = "Expandable/collapsible pretty-printed JSON for Jupyter Notebooks"
+readme = "README.md"
+license = { file = "LICENSE" }
+keywords = ["json", "jupyter", "notebook", "widget", "tree", "html"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities",
+]
+
+authors = [
+    { name = "Nehal Patel", email = "nehal@alum.mit.edu" }
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/habemus-papadum/json-tree"
+Repository = "https://github.com/habemus-papadum/json-tree"
+Documentation = "https://github.com/habemus-papadum/json-tree"
+
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "jupyter>=1.1.1",
+]
