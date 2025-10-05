@@ -25,6 +25,7 @@ JSON(example, expand_depth=2)
 -----------
 
 (Github preview will sanitize styles out of the example above.  See below for a screenshot)
+
 ------------
 
 ## Screenshot
