@@ -1,10 +1,13 @@
-# json-tree
+# interactive-json-tree
 Expandable tree view for JSON-like data for Jupyter.  
 
-
+## Installation
+```bash
+pip install interactive-json-tree
+```
 ## Example:
 ```python
-from json_tree import JSON
+from interactive_json_tree import JSON
 
 example = {
     "name": "Acme Corp",
@@ -30,7 +33,7 @@ JSON(example, expand_depth=2)
 
 ## Screenshot
 
-![Example of json-tree expandable view](example.png)
+![Example of interactive-json-tree expandable view](example.png)
 ----------------
 
 ### Credits / Caveat
