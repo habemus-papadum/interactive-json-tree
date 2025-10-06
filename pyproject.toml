@@ -1,6 +1,6 @@
 [project]
 name = "interactive-json-tree"
-version = "0.1.0"
+version = "0.2.0"
 description = "Expandable/collapsible pretty-printed JSON for Jupyter Notebooks"
 readme = "README.md"
 license = { file = "LICENSE" }
@@ -42,4 +42,20 @@ build-backend = "hatchling.build"
 dev = [
     "hatch>=1.14.2",
     "jupyter>=1.1.1",
+    "mkdocs>=1.6.1",
+    "mkdocs-jupyter>=0.24.8",
+    "mkdocstrings>=0.26.1",
+    "mkdocstrings-python>=1.11.1",
+    "ruff>=0.13.3",
 ]
+
+[tool.ruff]
+target-version = "py312"
+line-length = 120
+exclude = [
+]
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = [
+]
+

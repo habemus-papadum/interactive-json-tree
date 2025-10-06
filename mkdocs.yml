@@ -1,0 +1,29 @@
+site_name: interactive-json-tree
+site_description: Expandable/collapsible pretty-printed JSON for Jupyter Notebooks
+site_author: Nehal Patel
+repo_url: https://github.com/habemus-papadum/interactive-json-tree
+repo_name: interactive-json-tree
+
+theme:
+  name: "material"
+
+nav:
+  - Home: index.md
+  - Example: example.ipynb
+  - API: reference.md
+
+
+# If you'd like to specify a separate docs directory, you can do so here
+docs_dir: docs
+
+# Plugins to enable
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+      handlers:
+        python:
+          options:
+            docstring_style: numpy
+            show_submodules: true
+  - mkdocs-jupyter
